@@ -19,7 +19,7 @@ export default function HomePage() {
       </motion.section>
 
       <section className="grid gap-6 md:grid-cols-2">
-        {projects.slice(0, 4).map((proj) => (
+        {projects.filter(p => p.featured).slice(0, 4).map((proj) => (
           <ProjectCard key={proj.slug} project={proj} />
         ))}
       </section>
