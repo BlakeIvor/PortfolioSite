@@ -14,7 +14,7 @@ export const projects = [
     title: "Inventory Management Web App",
     tech: "Python, Django, PostgreSQL, Docker",
     description:
-      "CRUD-based web app for managing DnD inventories with persistent storage.",
+      "CRUD-based web app for managing DnD character inventories with easily viewable persistent storage.",
     screenshot: "/static/images/inventory-app.png",
     thumbnail: "/static/images/inventory-app.png",
     featured: true
