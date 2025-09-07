@@ -20,9 +20,9 @@ export const projects = [
     featured: true
   },
   {
-    slug: "microblog",
+    slug: "Microblog",
     title: "Flask Microblog Platform",
-    tech: "Flask, SQLAlchemy, Boostrap, SQLite",
+    tech: "Flask, SQLAlchemy, Bootstrap, SQLite",
     description:
       "Fully-featured microblog platform with real-time posts, user authentication, and responsive design.",
     features: [
