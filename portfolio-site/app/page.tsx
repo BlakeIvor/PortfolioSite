@@ -11,7 +11,7 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="pt-4 flex flex-col items-center justify-center bg-gray-900 pb-40"
+        className="pt-4 flex flex-col items-center justify-center bg-gray-900 pb-10"
       >
         <div className="rounded-full overflow-hidden border-4 border-gray-800 w-40 h-40 bg-gray-800 mb-6">
           <Image
@@ -45,12 +45,13 @@ export default function HomePage() {
           <strong className="text-white font-semibold"> Software Engineering Co-Op at State Street Corporation's Charles River Development division</strong>. 
           Feel free to explore my portfolio to see some of the projects I've worked on!
         </p>
-
       </motion.section>
 
-      <section className="mx-auto max-w-4xl bg-gray-900 rounded-2xl text-white py-12 px-8">
-        <h1 className="text-4xl font-bold mb-6 center text-center">Featured Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+      <section className="mx-auto max-w-6xl bg-gray-900 rounded-2xl text-white py-12 px-8">
+        <h1 className="text-4xl font-bold mb-10 center text-center">Featured Projects</h1>
+        <div className="grid grid-cols-1 gap-8">
           {projects.filter((p) => p.featured).slice(0, 4).map((proj) => (
             <ProjectCard key={proj.slug} project={proj} />
           ))}

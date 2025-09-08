@@ -21,7 +21,7 @@ export function Header() {
         <div className="min-w-0">
           <h1 className="text-3xl font-bold mb-1">Blake Shea</h1>
           <p className="text-lg text-gray-400 mb-3">
-            Software Engineer & Full-Stack Developer
+            Software Engineer & Full Stack Developer
           </p>
           {/* Always-visible social icons */}
           <div className="flex flex-wrap gap-4 text-2xl">
@@ -54,9 +54,19 @@ export function Header() {
       </div>
 
       {/* RIGHT SIDE (hidden on mobile, shown from md+) */}
+      
       <div className="hidden md:flex gap-4 flex-wrap">
         <a
-          href="mailto:your@email.com"
+          href="/static/files/Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
+        >
+          <HiDocument className="text-lg" />
+          Resume
+        </a>
+        <a
+          href="mailto:blakeivorshea@gmail.com"
           className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
         >
           <FaEnvelope className="text-lg" />
@@ -70,15 +80,6 @@ export function Header() {
         >
           <FaGithub className="text-lg" />
           GitHub
-        </a>
-        <a
-          href="/static/files/Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
-        >
-          <HiDocument className="text-lg" />
-          Resume
         </a>
         <a
           href="https://blaika.itch.io/"
