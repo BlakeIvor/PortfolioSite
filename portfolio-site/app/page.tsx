@@ -15,22 +15,18 @@ export default function HomePage() {
       >
         
         <p className="mt-16 text-white text-2xl max-w-5xl center text-center px-4">
-          Hello! I'm Blake. A dedicated software engineer focused on web, 3D, and software development. I am a senior at Clark University,
-          pursuing a <strong className="text-white font-semibold">dual B.A. in Computer Science and Interactive Media</strong> while working as a
-          <strong className="text-white font-semibold"> Software Engineering Co-Op </strong> at State Street Corporation's Charles River Development division.
-          Feel free to explore my skills and portfolio.
+          Hello! I'm Blake. A dedicated software engineer focused on web, 3D, and software development. Currently a senior at Clark University,
+          pursuing a <strong className="text-white font-semibold">double B.A. in Computer Science and Interactive Media</strong> while working as a
+          <strong className="text-white font-semibold"> Software Engineering Co-Op </strong> at State Street
         </p>
         <div className="flex flex-wrap justify-center gap-3 text-lg mt-8">
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">C#</span>
-          <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">Asp.NET</span>
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">Python</span>
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">Flask/Django/FastAPI</span>
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">SQL</span>
-          <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">React</span>
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">HTML/CSS</span>
-          <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">Next.js</span> 
+          <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">React</span>
           <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">Unity</span>
-          <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">OpenCV</span>
         </div>
       </motion.section>
       
