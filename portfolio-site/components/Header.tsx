@@ -33,7 +33,7 @@ export function Header() {
               <FaGithub className="hover:text-blue-400 transition" />
             </a>
             <a
-              href="https://linkedin.com/in/blakeivor"
+              href="https://www.linkedin.com/in/blake27/"
               target="_blank"
               rel="noopener noreferrer"
             >
