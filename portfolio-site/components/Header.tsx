@@ -39,7 +39,7 @@ export function Header() {
             >
               <FaLinkedin className="hover:text-blue-400 transition" />
             </a>
-            <a href="mailto:your@email.com">
+            <a href="mailto:blakeivorshea@gmail.com">
               <FaEnvelope className="hover:text-blue-400 transition" />
             </a>
             <a
