@@ -42,13 +42,6 @@ export function Header() {
             <a href="mailto:blakeivorshea@gmail.com">
               <FaEnvelope className="hover:text-blue-400 transition" />
             </a>
-            <a
-              href="https://blaika.itch.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiItchdotio className="hover:text-pink-400 transition" />
-            </a>
           </div>
         </div>
       </div>
