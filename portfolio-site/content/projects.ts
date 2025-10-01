@@ -1,7 +1,7 @@
 export const projects = [
   {
     slug: "mixed-reality-headset",
-    title: "Mixed Reality Headset Prototype",
+    title: "Mixed Reality Headset",
     tech: "Python, OpenCV, Raspberry Pi",
     description:
       "Raspberry Pi-based MR headset with YOLO detection, real-time server-side analysis, and UDP networking.",
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     slug: "inventory-management",
-    title: "Inventory Management Web App",
+    title: "Inventory Management App",
     tech: "Python, Django, PostgreSQL, Docker",
     description:
       "CRUD-based web app for managing DnD character inventories with easily viewable persistent storage.",
