@@ -56,4 +56,22 @@ export const projects = [
     thumbnail: "/static/images/meltdown.png",
     featured: true
   }
+  ,{
+    slug: "starbound-wanderers",
+    title: "Starbound Wanderers",
+    tech: "C#, Unity, PlasticSCM",
+    description:
+      "Top-down isometric narrative adventure game made in Unity. Worked on combat, UI, pathing algorithms, and optimization.",
+    features: [
+      "A* pathfinding for NPCs",
+      "Queue, lock, and thread systems for optimizing performance (decreasing per-frame impact and utilizing n-frame operation technique)",
+      "Enemy AI state systems",
+      "Inventory and UI systems",
+      "Demo'd at PAX East 2023"
+    ],
+    demoUrl: "https://kyaneos.itch.io/starbound-wanderers",
+    screenshot: "/static/images/starbound.png",
+    thumbnail: "/static/images/starbound.png",
+    featured: true
+  }
 ];
