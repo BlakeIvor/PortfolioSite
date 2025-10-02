@@ -18,9 +18,7 @@ export default function HomePage() {
             Hello, I&apos;m Blake
           </p>
           <p className="mt-16 text-white text-2xl max-w-5xl center text-center px-4">
-            Hello! I&apos;m Blake. A dedicated software engineer focused on web, 3D, and software development. Currently a senior at Clark University,
-            pursuing a <strong className="text-white font-semibold">double B.A. in Computer Science and Interactive Media</strong> while working as a
-            <strong className="text-white font-semibold"> Software Engineering Co-Op </strong> at State Street
+            I&apos;m a software engineer located in the United States that focuses on creating scalable and performant solutions for large-scale applications, 3D environments, and server development.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-lg mt-8">
             <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">C#</span>
