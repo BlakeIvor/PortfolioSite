@@ -16,10 +16,10 @@ export default function HomePage() {
           className="pt-4 flex flex-col items-center justify-center pb-10"
         >
           <p className="text-4xl sm:text-5xl font-bold text-white text-center">
-            Hi, I'm Blake Shea
+            Hello, I'm Blake
           </p>
           <p className="mt-16 text-white text-2xl max-w-5xl center text-center px-4">
-            I'm a software engineer located in the United States that focuses on creating performant, efficient, and scalable solutions in large-scale applications, 3D, and server development.
+            I'm a software engineer located in the United States that focuses on creating scalable and performant solutions for large-scale applications, 3D environments, and server development.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-lg mt-8">
             <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">C#</span>

@@ -44,7 +44,7 @@ export function Header() {
               <FaEnvelope className="hover:text-blue-400 transition" />
             </a>
             <a
-              href="/static/files/Resume.pdf"
+              href="/static/documents/Shea_Blake_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Resume"
@@ -68,7 +68,7 @@ export function Header() {
         </a>
         {/* Resume button */}
         <a
-          href="/static/files/Resume.pdf"
+          href="/static/documents/Shea_Blake_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
