@@ -49,10 +49,40 @@ export default function HomePage() {
       {/* Work Experience Section */}
       <section id="work-experience" className="mx-auto max-w-7xl bg-gray-900 rounded-2xl text-white py-12 px-8 mt-12">
         <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
-        <div className="text-lg text-gray-300">
-          {/* Add your work experience details here */}
-          <p>Software Engineering Co-Op at State Street Corporation's Charles River Development division</p>
-          <p>Other relevant experience...</p>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold">Software Engineering Co-op, State Street Corporation</h3>
+            <div className="text-gray-400 text-sm mb-2">Burlington, MA &mdash; Jul 2025 – Dec 2025</div>
+            <ul className="list-disc list-inside text-gray-300 ml-4">
+              <li>Diagnosed and resolved critical production bugs in C# and .NET trading systems, preventing downtime and functionality loss for 30+ client firms.</li>
+              <li>Migrated legacy C# WinForms applications to React thin clients with cached order data, reducing UI latency by 40% while preserving full data integrity.</li>
+              <li>Developed automated unit and integration tests for 3 key features, reducing recurring production defects and streamlining deployment.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">AR Development Intern, White Snake Projects</h3>
+            <div className="text-gray-400 text-sm mb-2">Boston, MA &mdash; Apr 2025 – Jul 2025</div>
+            <ul className="list-disc list-inside text-gray-300 ml-4">
+              <li>Designed an AR walking tour MVP highlighting indigenous history in Boston using 3D scans and low-code prototyping tools.</li>
+              <li>Co-authored a partnership and grant proposal directed to Massachusetts indigenous groups, the City of Boston, and local AR companies, securing over $68k in funding.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">Software Engineering Intern, Avilaar, Inc.</h3>
+            <div className="text-gray-400 text-sm mb-2">Worcester, MA &mdash; Aug 2024 – Apr 2025</div>
+            <ul className="list-disc list-inside text-gray-300 ml-4">
+              <li>Developed a mobile AR learning companion app using Python and Unreal Engine, integrating GPT4o and ElevenLabs for real-time context-aware interactions.</li>
+              <li>Optimized AI chat system with retrieval-augmented generation (RAG), FastAPI, and Docker on AWS EC2, reducing execution time to 10% of the original prototype.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">C# and VR Instructor, ID TECH</h3>
+            <div className="text-gray-400 text-sm mb-2">Cambridge, MA &mdash; May 2024 – Nov 2024</div>
+            <ul className="list-disc list-inside text-gray-300 ml-4">
+              <li>Taught C# and Unity fundamentals to over 100 students, guiding creation of personalized VR applications targeted to the Meta Quest.</li>
+              <li>Drafted 3 interactive VR demos to teach physics, programming, and UX principles, enhancing student hands-on skills in immersive environments.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
