@@ -2,7 +2,20 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function ProjectCard({ project }: { project: any }) {
+export type Project = {
+  slug: string;
+  title: string;
+  tech: string;
+  description: string;
+  screenshot?: string;
+  thumbnail: string;
+  featured: boolean;
+  features?: string[];
+  demoUrl?: string;
+  repoUrl?: string;
+};
+
+export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.slug}`} className="block group h-full">
       <motion.div

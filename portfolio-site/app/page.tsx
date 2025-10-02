@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../content/projects";
-import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -16,10 +15,12 @@ export default function HomePage() {
           className="pt-4 flex flex-col items-center justify-center pb-10"
         >
           <p className="text-4xl sm:text-5xl font-bold text-white text-center">
-            Hello, I'm Blake
+            Hello, I&apos;m Blake
           </p>
           <p className="mt-16 text-white text-2xl max-w-5xl center text-center px-4">
-            I'm a software engineer located in the United States that focuses on creating scalable and performant solutions for large-scale applications, 3D environments, and server development.
+            Hello! I&apos;m Blake. A dedicated software engineer focused on web, 3D, and software development. Currently a senior at Clark University,
+            pursuing a <strong className="text-white font-semibold">double B.A. in Computer Science and Interactive Media</strong> while working as a
+            <strong className="text-white font-semibold"> Software Engineering Co-Op </strong> at State Street
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-lg mt-8">
             <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full">C#</span>

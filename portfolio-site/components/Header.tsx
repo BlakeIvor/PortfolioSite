@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
-import { SiItchdotio } from "react-icons/si";
 import { HiDocument } from "react-icons/hi";
 
 export function Header() {
