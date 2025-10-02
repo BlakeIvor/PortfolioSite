@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+      <body className="bg-gray-800/90 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
         <Header />
         <main className="mx-auto">{children}</main>
         <Footer />
