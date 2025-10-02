@@ -45,6 +45,26 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Work Experience Section */}
+      <section id="work-experience" className="mx-auto max-w-7xl bg-gray-900 rounded-2xl text-white py-12 px-8 mt-12">
+        <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
+        <div className="text-lg text-gray-300">
+          {/* Add your work experience details here */}
+          <p>Software Engineering Co-Op at State Street Corporation's Charles River Development division</p>
+          <p>Other relevant experience...</p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="mx-auto max-w-7xl bg-gray-900 rounded-2xl text-white py-12 px-8 mt-12">
+        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+        <div className="text-lg text-gray-300">
+          <p>Email: <a href="mailto:blakeivorshea@gmail.com" className="text-blue-400 underline">blakeivorshea@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/blake27/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">blake27</a></p>
+          <p>GitHub: <a href="https://github.com/BlakeIvor" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">BlakeIvor</a></p>
+        </div>
+      </section>
     </div>
   );
 }

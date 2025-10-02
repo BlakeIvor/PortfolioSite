@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
 import { SiItchdotio } from "react-icons/si";
 import { HiDocument } from "react-icons/hi";
 
@@ -23,7 +24,7 @@ export function Header() {
           <p className="text-lg text-gray-400 mb-3">
             Software Engineer & Full Stack Developer
           </p>
-          {/* Always-visible social icons */}
+          {/* Always-visible social icons (LEFT): GitHub, LinkedIn, Email, Resume */}
           <div className="flex flex-wrap gap-4 text-2xl">
             <a
               href="https://github.com/BlakeIvor"
@@ -42,46 +43,46 @@ export function Header() {
             <a href="mailto:blakeivorshea@gmail.com">
               <FaEnvelope className="hover:text-blue-400 transition" />
             </a>
+            <a
+              href="/static/files/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume"
+              title="Resume"
+            >
+              <HiDocument className="hover:text-blue-400 transition" />
+            </a>
           </div>
         </div>
       </div>
 
       {/* RIGHT SIDE (hidden on mobile, shown from md+) */}
-      
       <div className="hidden md:flex gap-4 flex-wrap">
+        {/* Work Experience button */}
+        <a
+          href="#work-experience"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
+        >
+          <FaBriefcase className="text-lg" />
+          Work Experience
+        </a>
+        {/* Resume button */}
         <a
           href="/static/files/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
         >
           <HiDocument className="text-lg" />
           Resume
         </a>
+        {/* Contact button */}
         <a
-          href="mailto:blakeivorshea@gmail.com"
-          className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
+          href="#contact"
+          className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
         >
           <FaEnvelope className="text-lg" />
-          Mail
-        </a>
-        <a
-          href="https://github.com/BlakeIvor"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
-        >
-          <FaGithub className="text-lg" />
-          GitHub
-        </a>
-        <a
-          href="https://blaika.itch.io/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
-        >
-          <SiItchdotio className="text-lg" />
-          itch.io
+          Contact
         </a>
       </div>
     </header>
