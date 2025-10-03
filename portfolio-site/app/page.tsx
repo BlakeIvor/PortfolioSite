@@ -12,12 +12,12 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="pt-4 flex flex-col items-center justify-center pb-10"
+          className="pt-4 flex flex-col items-center justify-center pb-6"
         >
           <p className="text-4xl sm:text-5xl font-bold text-white text-center">
             Hello, I&apos;m Blake
           </p>
-          <p className="mt-16 text-white text-2xl max-w-5xl center text-center px-4">
+          <p className="mt-8 text-white text-2xl max-w-5xl center text-center px-4">
             I&apos;m a software engineer located in the United States that focuses on creating scalable and performant solutions for large-scale applications, 3D environments, and server development.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-lg mt-8">
@@ -31,7 +31,7 @@ export default function HomePage() {
           </div>
         </motion.section>
 
-        <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+        <hr className="h-px mt-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
         {/* Projects Section */}
         <section>

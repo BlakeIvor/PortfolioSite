@@ -4,7 +4,7 @@ import { HiDocument, HiDocumentText } from "react-icons/hi";
 
 export function Header() {
   return (
-    <header className="flex flex-wrap items-center justify-between px-6 py-6 bg-gray-900 text-white shadow-lg gap-6">
+    <header className="flex flex-wrap items-center justify-between px-6 pt-6 bg-gray-900 text-white shadow-lg gap-6">
       {/* LEFT SIDE */}
       <div className="flex items-center gap-6 min-w-0">
         <div className="rounded-full overflow-hidden border-4 border-gray-700 w-28 h-28 bg-gray-800 flex-shrink-0">
