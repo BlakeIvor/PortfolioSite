@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
-import { HiDocument } from "react-icons/hi";
+import { HiDocument, HiDocumentText } from "react-icons/hi";
 
 export function Header() {
   return (
@@ -48,7 +48,7 @@ export function Header() {
               aria-label="Resume"
               title="Resume"
             >
-              <HiDocument className="hover:text-blue-400 transition" />
+              <HiDocumentText className="hover:text-blue-400 transition" />
             </a>
           </div>
         </div>
@@ -71,7 +71,7 @@ export function Header() {
           rel="noopener noreferrer"
           className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
         >
-          <HiDocument className="text-lg" />
+          <HiDocumentText className="text-lg" />
           Resume
         </a>
         {/* Contact button */}
