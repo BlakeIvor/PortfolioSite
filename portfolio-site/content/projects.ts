@@ -73,5 +73,21 @@ export const projects = [
     screenshot: "/static/images/starbound.png",
     thumbnail: "/static/images/starbound.png",
     featured: true
+  },
+  {
+    slug: "bellicose",
+    title: "Bellicose Fighting",
+    tech: "C#, Unity, Git",
+    description:
+      "2D fighting game using new Unity Input System with local multiplayer and multiple characters. Developed character state machines and multi-device input buffering.",
+    features: [
+      "Character state machines",
+      "Input buffering",
+      "Attack system",
+    ],
+    demoUrl: "https://blaika.itch.io/bellicose-ultimate-fighting",
+    screenshot: "/static/images/bellicose.png",
+    thumbnail: "/static/images/bellicose.png",
+    featured: true
   }
 ];

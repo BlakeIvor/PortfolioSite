@@ -37,7 +37,7 @@ export default function HomePage() {
         <section>
           <h1 className="text-4xl font-bold mb-10 center text-center text-white">Featured Projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 items-stretch">
-            {projects.filter((p) => p.featured).slice(0, 3).map((proj) => (
+            {projects.filter((p) => p.featured).slice(0, 10).map((proj) => (
               <div
                 key={proj.slug}
                 className="overflow-hidden rounded-2xl bg-gray-800 transition-transform duration-300 hover:scale-105 cursor-pointer h-96 lg:h-[28rem] flex flex-col justify-between"
