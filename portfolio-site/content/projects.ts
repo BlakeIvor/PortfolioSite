@@ -52,7 +52,7 @@ export const projects = [
       "Game jam project (48 hours)"
     ],
     demoUrl: "https://blaika.itch.io/downfall",
-    screenshot: "/static/images/meltdown.png",
+    screenshot: "/static/images/meltdown-gameplay.png",
     thumbnail: "/static/images/meltdown.png",
     featured: true
   }
