@@ -76,7 +76,7 @@ export const projects = [
   },
   {
     slug: "bellicose",
-    title: "Bellicose Fighting",
+    title: "Bellicose",
     tech: "C#, Unity, Git",
     description:
       "2D fighting game using new Unity Input System with local multiplayer and multiple characters. Developed character state machines and multi-device input buffering.",
