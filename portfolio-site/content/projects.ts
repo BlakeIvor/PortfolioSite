@@ -53,7 +53,7 @@ export const projects = [
     ],
     demoUrl: "https://blaika.itch.io/downfall",
     screenshot: "/static/images/meltdown-gameplay.png",
-    thumbnail: "/static/images/meltdown.png",
+    thumbnail: "/static/images/meltdown-gameplay.png",
     featured: true
   }
   ,{
