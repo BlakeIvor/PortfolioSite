@@ -70,8 +70,8 @@ export const projects = [
       "Demo'd at PAX East 2023"
     ],
     demoUrl: "https://kyaneos.itch.io/starbound-wanderers",
-    screenshot: "/static/images/starbound.png",
-    thumbnail: "/static/images/starbound.png",
+    screenshot: "/static/images/starbound-wanderers/starbound-wanderers-title.png",
+    thumbnail: "/static/images/starbound-wanderers/starbound-wanderers-title.png",
     featured: true
   },
   {
@@ -86,8 +86,8 @@ export const projects = [
       "Attack system",
     ],
     demoUrl: "https://blaika.itch.io/bellicose-ultimate-fighting",
-    screenshot: "/static/images/bellicose.png",
-    thumbnail: "/static/images/bellicose.png",
+    screenshot: "/static/images/bellicose/bellicose-title.png",
+    thumbnail: "/static/images/bellicose/bellicose-title.png",
     featured: true
   }
 ];
