@@ -1,14 +1,6 @@
+import { desc } from "framer-motion/client";
+
 export const projects = [
-  {
-    slug: "mixed-reality-headset",
-    title: "Mixed Reality Headset",
-    tech: "Python, OpenCV, Raspberry Pi",
-    description:
-      "Raspberry Pi-based MR headset with YOLO detection, real-time server-side analysis, and UDP networking.",
-    screenshot: "/static/images/mixed-reality-headset.png",
-    thumbnail: "/static/images/mixed-reality-headset.png",
-    featured: true
-  },
   {
     slug: "steam-recommendation-engine",
     title: "Steam Recommendation Engine",
@@ -20,13 +12,39 @@ export const projects = [
     featured: true
   },
   {
-    slug: "inventory-management",
-    title: "Inventory Management App",
-    tech: "Python, Django, PostgreSQL, Docker",
+    slug: "meltdown",
+    title: "Meltdown",
+    tech: "C#, Unity, git",
     description:
-      "CRUD-based web app for managing DnD character inventories with easily viewable persistent storage.",
-    screenshot: "/static/images/inventory-app.png",
-    thumbnail: "/static/images/inventory-app.png",
+      "Atmospheric side scroller mining game created in 48 hours. Dig, dodge, and survive as you descend into the depths!",
+    features: [
+      "Procedurally generated levels",
+      "Mining and resource collection",
+      "Hazards and obstacles",
+      "Power-ups and upgrades",
+      "Game jam project (48 hours)"
+    ],
+    demoUrl: "https://blaika.itch.io/downfall",
+    screenshot: "/static/images/meltdown/meltdown-thumbnail.png",
+    thumbnail: "/static/images/meltdown/meltdown-thumbnail.png",
+    featured: true
+  },
+  {
+    slug: "arcadia-learning-app",
+    title: "Arcadia Learning App",
+    tech: "Python, FastAPI, Unreal Engine, Blueprints, C++",
+    description:
+      "Educational AR mobile learning app for children to better comprehend assigned reading material through interactive chats with an AI companion.",
+    features: [
+      "AI-powered interactive companion using OpenAI API",
+      "3D Augmented reality interactions using Unreal Engine",
+      "Backend API with FastAPI for content management",
+      "Chat history and AI learning system to improve user experience over time"
+    ],
+    demoUrl: "https://arcadia-learning-app-demo.vercel.app",
+    repoUrl: "https://github.com/BlakeIvor/ArcadiaLearningApp",
+    screenshot: "/static/images/arcadia/terrence-ar.png",
+    thumbnail: "/static/images/arcadia/terrence-ar.png",
     featured: true
   },
   {
@@ -49,24 +67,16 @@ export const projects = [
     featured: false
   },
   {
-    slug: "meltdown",
-    title: "Meltdown",
-    tech: "C#, Unity",
+    slug: "mixed-reality-headset",
+    title: "Mixed Reality Headset",
+    tech: "Python, OpenCV, Raspberry Pi",
     description:
-      "Atmospheric side scroller mining game created in 48 hours. Dig, dodge, and survive as you descend into the depths!",
-    features: [
-      "Procedurally generated levels",
-      "Mining and resource collection",
-      "Hazards and obstacles",
-      "Power-ups and upgrades",
-      "Game jam project (48 hours)"
-    ],
-    demoUrl: "https://blaika.itch.io/downfall",
-    screenshot: "/static/images/meltdown-gameplay.png",
-    thumbnail: "/static/images/meltdown-gameplay.png",
-    featured: true
-  }
-  ,{
+      "Raspberry Pi-based MR headset with YOLO detection, real-time server-side analysis, and UDP networking.",
+    screenshot: "/static/images/mixed-reality-headset.png",
+    thumbnail: "/static/images/mixed-reality-headset.png",
+    featured: false
+  },
+  {
     slug: "starbound-wanderers",
     title: "Starbound Wanderers",
     tech: "C#, Unity, PlasticSCM",
@@ -99,5 +109,15 @@ export const projects = [
     screenshot: "/static/images/bellicose/bellicose-title.png",
     thumbnail: "/static/images/bellicose/bellicose-title.png",
     featured: true
-  }
+  },
+  {
+    slug: "inventory-management",
+    title: "Inventory Management App",
+    tech: "Python, Django, PostgreSQL, Docker",
+    description:
+      "CRUD-based web app for managing DnD character inventories with easily viewable persistent storage.",
+    screenshot: "/static/images/inventory-app.png",
+    thumbnail: "/static/images/inventory-app.png",
+    featured: true
+  },
 ];
