@@ -10,6 +10,16 @@ export const projects = [
     featured: true
   },
   {
+    slug: "steam-recommendation-engine",
+    title: "Steam Recommendation Engine",
+    tech: "Python, FastAPI, Next.js, Supabase",
+    description:
+      "Machine learning-based recommendation engine for Steam games, providing personalized game suggestions.",
+    screenshot: "/static/images/steam-recommendation-engine.png",
+    thumbnail: "/static/images/gamelib/steam-recommendation-engine-thumbnail.png",
+    featured: true
+  },
+  {
     slug: "inventory-management",
     title: "Inventory Management App",
     tech: "Python, Django, PostgreSQL, Docker",
@@ -36,7 +46,7 @@ export const projects = [
     repoUrl: "https://github.com/BlakeIvor/FlaskMicroBlog",
     screenshot: "/static/images/microblog-hero.png",
     thumbnail: "/static/images/microblog-hero.png",
-    featured: true
+    featured: false
   },
   {
     slug: "meltdown",
