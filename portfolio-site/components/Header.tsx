@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
 import { HiDocument, HiDocumentText } from "react-icons/hi";
 
@@ -18,7 +19,11 @@ export function Header() {
           />
         </div>
         <div className="min-w-0">
-          <h1 className="text-3xl font-bold mb-1">Blake Shea</h1>
+          <Link href="/">
+            <h1 className="text-3xl font-bold mb-1 hover:text-blue-400 transition cursor-pointer">
+              Blake Shea
+            </h1>
+          </Link>
           <p className="text-lg text-gray-400 mb-3">
             Software Engineer & Full Stack Developer
           </p>
