@@ -1,3 +1,5 @@
+import { MDXProps } from 'mdx/types';
+import { ComponentType } from 'react';
 import { MediaGallery } from '../components/MediaGallery';
 
 // Import all MDX files statically
@@ -15,23 +17,31 @@ const mdxComponents = {
   MediaGallery,
 };
 
+// Define the type for MDX components
+type MDXComponent = ComponentType<MDXProps>;
+
 // Create wrapper components that provide the MDX components
-const createMDXWrapper = (Component: any) => {
-  return (props: any) => <Component components={mdxComponents} {...props} />;
+const createMDXWrapper = (Component: MDXComponent) => {
+  const WrappedComponent = (props: MDXProps) => <Component components={mdxComponents} {...props} />;
+  
+  // Set display name for debugging
+  WrappedComponent.displayName = `MDXWrapper(${Component.displayName || Component.name || 'Component'})`;
+  
+  return WrappedComponent;
 };
 
 // Map project slugs to their MDX components
-export const projectContent: Record<string, React.ComponentType> = {
-  'steam-recommendation-engine': createMDXWrapper(SteamRecommendationEngine),
-  'meltdown': createMDXWrapper(Meltdown),
-  'arcadia-learning-app': createMDXWrapper(ArcadiaLearningApp),
-  'Microblog': createMDXWrapper(Microblog),
-  'mixed-reality-headset': createMDXWrapper(MixedRealityHeadset),
-  'starbound-wanderers': createMDXWrapper(StarboundWanderers),
-  'bellicose': createMDXWrapper(Bellicose),
-  'inventory-management': createMDXWrapper(InventoryManagement),
+export const projectContent: Record<string, ComponentType<MDXProps>> = {
+  'steam-recommendation-engine': createMDXWrapper(SteamRecommendationEngine as MDXComponent),
+  'meltdown': createMDXWrapper(Meltdown as MDXComponent),
+  'arcadia-learning-app': createMDXWrapper(ArcadiaLearningApp as MDXComponent),
+  'Microblog': createMDXWrapper(Microblog as MDXComponent),
+  'mixed-reality-headset': createMDXWrapper(MixedRealityHeadset as MDXComponent),
+  'starbound-wanderers': createMDXWrapper(StarboundWanderers as MDXComponent),
+  'bellicose': createMDXWrapper(Bellicose as MDXComponent),
+  'inventory-management': createMDXWrapper(InventoryManagement as MDXComponent),
 };
 
-export function getProjectContent(slug: string): React.ComponentType | null {
+export function getProjectContent(slug: string): ComponentType<MDXProps> | null {
   return projectContent[slug] || null;
 }
