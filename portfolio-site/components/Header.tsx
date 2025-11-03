@@ -1,9 +1,15 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase, FaHome } from "react-icons/fa";
 import { HiDocument, HiDocumentText } from "react-icons/hi";
 
 export function Header() {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   return (
     <header className="flex flex-wrap items-center justify-between px-6 pt-6 bg-gray-900 text-white shadow-lg gap-6">
       {/* LEFT SIDE */}
@@ -61,6 +67,17 @@ export function Header() {
 
       {/* RIGHT SIDE (hidden on mobile, shown from md+) */}
       <div className="hidden md:flex gap-4 flex-wrap">
+        {/* Back to Home button - only show when not on main page */}
+        {!isHomePage && (
+          <Link
+            href="/"
+            className="bg-teal-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2 transition"
+          >
+            <FaHome className="text-lg" />
+            Home
+          </Link>
+        )}
+        
         {/* Work Experience button */}
         <a
           href="#work-experience"
