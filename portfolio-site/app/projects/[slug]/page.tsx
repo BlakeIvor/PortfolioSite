@@ -1,19 +1,23 @@
 'use client';
 
+import { use } from 'react';
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects } from "../../../content/projects";
 import { getProjectContent } from "../../../lib/mdx-content";
 import { FaArrowLeft } from "react-icons/fa";
 
-export default function ProjectDetail({ params }: { params: { slug: string } }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
+  // Unwrap the params Promise using React.use()
+  const { slug } = use(params);
+  
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
   }
 
-  const MDXContent = getProjectContent(params.slug);
+  const MDXContent = getProjectContent(slug);
 
   return (
     <div className="min-h-screen bg-gray-900">
