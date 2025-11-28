@@ -1,25 +1,37 @@
 # Steam Recommendation Engine
 
-**Technologies used:** Python, FastAPI, Next.js, Supabase
+<center>**Technologies used:** Python, FastAPI, Next.js, Supabase</center>
 
-![Steam Recommendation Engine](/static/images/gamelib/steam-recommendation-engine-thumbnail.png)
+<MediaGallery
+  mainImage={{
+    src: "/static/images/gamelib/dashboard.png",
+    alt: "GameLib Dashboard - Main interface showing personalized game recommendations",
+  }}
+  additionalMedia={[
+  ]}
+/>
 
 <center>This machine learning-based recommendation engine leverages Steam's extensive game database to provide personalized game suggestions based on user preferences and gaming history. The system analyzes user gaming patterns, genre preferences, and similar user behaviors to generate accurate suggestions.</center>
 
 ## Key Features
 
-- **Intelligent Recommendations**: Uses collaborative filtering and content-based algorithms to suggest games tailored to individual user preferences
-- **Real-time Processing**: FastAPI backend provides lightning-fast recommendation responses
+- **Intelligent Recommendations**: Uses collaborative and content-filtering algorithms to suggest games tailored to individual user preferences
+![CollaborativeRecommendations](/static/images/gamelib/recommendation_examples.png)
+- **Steam Cluster System**: Uses the Steam cluster system to find users that also play games at the top of play time for the user requesting and suggests other games that they have high playtime in 
+![Cluster](/static/images/gamelib/cluster_example.png)
+- **Real-time Processing**: FastAPI backend provides timely recommendation responses
+![Loading](/static/images/gamelib/finding_games.png)
 - **Modern Web Interface**: Built with Next.js for a responsive and interactive user experience
+![Login](/static/images/gamelib/login.png)
 - **Scalable Database**: Supabase integration for reliable data storage and user management
-- **Machine Learning Pipeline**: Advanced algorithms process thousands of Steam games and their metadata
+- **User play activity scraping**: Advanced algorithms process thousands of players and their played games to optimize recommendations and fill in gaps in listing data
 
 ## Technical Challenges
 
-- **Data Processing**: Handling and analyzing large datasets from Steam's extensive game library
+- **Data Processing**: For this app to be effective, it was necessary to acquire and use large datasets from Steam's library, some of which was more available than others, and some indirectly. Scraping user profiles to build up additional game title data beyond name, description, etc. was an effective workaround to many of the limitations of both Steam's API and the API of [SteamDB](https://steamdb.info/) (an independent record keeper of Steam's library). 
+It did, however, require standard scraping safeguards such as retries, error handling, and pagination to get past rate limitations and inconsistent data in the stream (often due to some games not having all values filled out)
 - **Algorithm Optimization**: Balancing recommendation accuracy with response time performance
 - **User Preference Learning**: Developing systems that adapt and improve recommendations over time
 - **Scalability**: Designing architecture to handle multiple concurrent users and recommendations
-- **API Integration**: Seamlessly connecting machine learning models with web frontend
 
 This project demonstrates the power of machine learning in enhancing user discovery and engagement, making it easier for gamers to find their next favorite title among Steam's vast library.
