@@ -1,6 +1,7 @@
 import { MDXProps } from 'mdx/types';
 import { ComponentType } from 'react';
 import { MediaGallery } from '../components/MediaGallery';
+import { ProjectButton } from '../components/ProjectButton';
 
 // Import all MDX files statically
 import SteamRecommendationEngine from '../content/projects/steam-recommendation-engine.mdx';
@@ -15,6 +16,7 @@ import InventoryManagement from '../content/projects/inventory-management.mdx';
 // MDX components that will be available in all MDX files
 const mdxComponents = {
   MediaGallery,
+  ProjectButton,
 };
 
 // Define the type for MDX components
